@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Category Analysis Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="https://newsdatacloud9.s3.amazonaws.com/styles.css">
+
+</head>
+<body>
+    <h1>News Category Analysis Dashboard</h1>
+    <h2>Cloud Computing DATS 6450_10 Group 9</h2>
+
+    <div class="header">
+        <a href="http://3.90.142.142:8501/" target="_blank" class="headline">
+            News Category Predictor
+        </a>
+                <div class="subheadline">Get the prediction in real-time</div>
+    </div>
+
+    <div class="table-container">
+        <h2>The Sample of Dataset News Category Analysis</h2>
+        <iframe src="https://newsdatacloud9.s3.amazonaws.com/head_table.html" width="100%" height="400px" frameborder="0"></iframe>
+    </div>
+
+    <h4>Exploratory Data Analysis</h4>
+
+    <div class="chart-container">
+        <div class="chart">
+            <h2>News Category Bar Plot</h2>
+            <img src="https://newsdatacloud9.s3.amazonaws.com/EDA/Category_bar.png" alt="Bar Chart 1">
+            <p class="chart-description">Checking out this massive dataset with over 35,000 headlines. It's interesting – politics has the lion's share of headlines, while education news seems to be the underdog with the least number of headlines.</p>
+        </div>
+
+        <svg width="100%" height="1" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0" x2="100%" y2="0" stroke="black" stroke-width="1"/>
+        </svg>
+
+        <div class="chart">
+            <h2>News Authors Bar Plot</h2>
+            <img src="https://newsdatacloud9.s3.amazonaws.com/EDA/author_bar.png" alt="Bar Chart 2">
+            <p class="chart-description">Interestingly, many headlines don't come with authors. For our ML model, predicting the category doesn't hinge on author information, so we've just let those nulls be.</p>
+        </div>
+
+        <svg width="100%" height="1" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0" x2="100%" y2="0" stroke="black" stroke-width="1"/>
+        </svg>
+
+        <div class="chart">
+            <h2>News Category Pie Plot</h2>
+            <img src="https://newsdatacloud9.s3.amazonaws.com/EDA/Category_pie.png" alt="Pie Chart">
+            <p class="chart-description">The model is nailing it with political news, hitting percentages between 1% to 5%! For the rest, it's holding strong at a decent 55% accuracy.</p>
+        </div>
+    </div>
+
+    <svg width="100%" height="1" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="0" x2="100%" y2="0" stroke="black" stroke-width="1"/>
+    </svg>
+    
+
+    <h3>Project Contents</h3>
+
+
+    <div class="dashboard-container">
+
+        <div class="left-section">
+            <a href="https://newsdatacloud9.s3.amazonaws.com/sagemaker.html" target="_blank">
+                <div class="image-container">
+                    <img class="set2image" src="https://assets-global.website-files.com/5f6bc60e665f54db361e52a9/5f6bc60e665f54b6261e5408_logo_sagemaker_gt.png" alt="AWS SageMaker Image">
+                    <div class="image-text">
+                        Show SageMaker Python code
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="right-section">
+            <a href="ppt.html" target="_blank">
+                <div class="image-container">
+                    <img class="set2image" src="https://cdn.pixabay.com/photo/2021/12/13/06/33/powerpoint-6867647_1280.png" alt="PPT Image">
+                    <div class="image-text">
+                        Show Presentation Slides
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <script src="https://newsdatacloud9.s3.amazonaws.com/script.js"></script>
+</body>
+</html>
